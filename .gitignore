@@ -1,0 +1,22 @@
+# dotfiles
+.DS_Store
+.env
+.envrc
+
+# ignore files/folders
+/node_modules
+/www/*.js
+/www/*.map
+/nightwatch_screenshots
+
+# logs
+npm-debug.log*
+yarn-error.log*
+selenium-debug.log*
+
+# testing
+/coverage
+
+# nightmare
+/reports
+/storybook-static

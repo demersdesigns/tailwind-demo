@@ -1,0 +1,75 @@
+@tailwind preflight;
+
+body{
+  color: #fff;
+  background: #1d2f46;
+}
+
+.contain{
+  width: 90%;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.page-title{
+  @apply
+  .my-4;
+}
+
+.card-collection{
+  @apply
+  .flex
+  .flex-wrap;
+}
+
+.c-card{
+  @apply
+  .w-full
+  .rounded
+  .overflow-hidden
+  .p-4;
+}
+
+@screen md {
+  .c-card{
+    @apply
+    .w-1/2
+  }
+}
+
+.c-card__image{
+  @apply
+  .w-full;
+}
+
+.c-card__body{
+  @apply
+  .px-6 .py-4
+  .text-base .text-grey-darker
+  .bg-white;
+}
+
+.c-card h1{
+  @apply
+  .mb-2
+  .font-bold
+  .text-xl;
+}
+
+.c-tag-list{
+  @apply
+  .px-0 .py-4;
+}
+
+.c-tag-list li{
+  @apply
+  .inline-block
+  .px-3 .py-1
+  .mr-2
+  .bg-grey-lighter
+  .rounded-full
+  .text-sm
+  .font-semibold;
+}
+
+@tailwind utilities;
